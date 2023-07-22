@@ -182,11 +182,10 @@ def get_price_config(request):
     try:
         # Retrieve the PriceConfig instance from the database
         # Fetching the first PriceConfig instance
-        # You can modify this based on your specific requirements
         price_configs = PriceConfig.objects.all()
 
         if not price_configs:
-            # If no PriceConfig instance exists in the database, return a 404 Not Found response
+            # No PriceConfig instance exists in the database
             return Response({"status": "failed", "error": "PriceConfig not found"}, status=status.HTTP_404_NOT_FOUND)
 
         completeResponse = []
