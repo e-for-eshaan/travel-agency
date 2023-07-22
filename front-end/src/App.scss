@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.mytable {
+  border-collapse: collapse;
+  width: 100%;
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  h4,
+  p {
+    padding: 0 4px;
+  }
+
+  td,
+  tr {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table {
+    tr,
+    td {
+      border: none;
+    }
+    width: 100%;
+    border-collapse: collapse;
+    td {
+      width: 50%;
+    }
+  }
+}
+
+.createTable {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h4 {
+    padding: 2px 4px;
+  }
+}
